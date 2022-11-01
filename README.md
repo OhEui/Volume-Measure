@@ -22,5 +22,5 @@
 # 📷 Screenshot(result) 
 - hexahedron
 ![image](https://drive.google.com/uc?export=view&id=16XEimDh3hfWV0f0Ds8dpFusU5i7LtNC8)
-- cylynder
+- cylinder
 ![image](https://drive.google.com/uc?export=view&id=1bW5UwwkYER18Mismg6gOChcaaZMl_qUW)
