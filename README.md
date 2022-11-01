@@ -1,4 +1,4 @@
-# volume measure
+# Volume Measure
 
 - **물체의 체적 정보 측정 ( 제한사항 최소화, 오차범위 5mm 이내 )**
 - 마트나 편의점의 물건 적제에 필요한 체적 정보 측정
@@ -17,9 +17,69 @@
     - 직육면체와 원기둥 형태만 측정가능
     - 상하차 시스템에서는 대부분 직육면체의 박스를 사용하므로 문제가 없을 것으로 예상
     - 편의점과 마트의 경우 높이문제보다는 가로 세로의 중요성이 더 크므로 상이할 것으로 예상
-    
+
+# **Calibration.npz 파일 생성 방법**
+
+final_make_calibraton.py이 정상적으로 실행되기 위해선 아래와 같이 과정이 필요합니다.
+
+추가적인 정보는 아래 링크를 참조하시기 바랍니다.
+
+[[OpenCV] 07-1. Camera Calibration — 참신러닝 (Fresh-Learning) (tistory.com)](https://leechamin.tistory.com/345)
+
+### 체커보드를 들고 있는 사진
+
+[Camera Calibration Pattern Generator – calib.io](https://calib.io/pages/camera-calibration-pattern-generator)
+
+# 사용 방법
+
+```python
+import glob
+from volume_measure import volumetric
+
+main_path = "."
+calibration_path = main_path + "/calibration" + "/cs_(8, 5)_rd_3_te_0.06_rs_4.npz"
+
+hexahedron = glob.glob(main_path + "/hexahedron/*.jpg")
+cylinder = glob.glob(main_path + "/cylinder/*.jpg")
+
+images = hexahedron + cylinder
+
+for fname in images:
+    try:
+        test = volumetric(fname, calibration_path)
+        test.set_init()
+        test.set_npz_values()
+
+        # 1. 배경제거
+        test.remove_background()
+
+        # 2. 물체 꼭지점 찾기
+        test.find_vertex(draw=False)
+        test.fix_vertex()
+
+        test.trans_checker_stand_coor()
+        test.set_transform_matrix()
+
+        # 3. 가로세로 구하기
+        test.measure_width_vertical()
+
+        # 4. 높이 구하기
+        test.measure_height(draw=True)
+
+        # 이미지에 최적정보들을 그리기
+        test.draw_image()
+
+        test.show_image(test.img, "Result Image")
+        cv2.waitKey()
+
+        cv2.destroyAllWindows()
+    except:
+        continue
+```
+
 
 # 📷 Screenshot(result) 
+- 단위 : cm
 - hexahedron
 ![image](https://drive.google.com/uc?export=view&id=16XEimDh3hfWV0f0Ds8dpFusU5i7LtNC8)
 - cylinder
