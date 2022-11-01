@@ -2,6 +2,7 @@
 
 - **물체의 체적 정보 측정 ( 제한사항 최소화, 오차범위 5mm 이내 )**
 - 마트나 편의점의 물건 적제에 필요한 체적 정보 측정
+![image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/10ba33dd-c53a-46d3-a444-a24aae27e276/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221101%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221101T103242Z&X-Amz-Expires=86400&X-Amz-Signature=a3aee6a3a6b505f4c1d22ab545adefa729ab8c1f79c16664cfa04bd067fedb1a&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 
 # 📝 Summary
