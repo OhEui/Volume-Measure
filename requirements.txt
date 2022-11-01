@@ -1,0 +1,8 @@
+Python>=3.9.13
+
+opencv-contrib-python>=4.6.0.66
+opencv-python>=4.6.0.66
+opencv-python-headless>=4.6.0.66
+
+rembg==2.0.25
+pytest-timeit==7.1.2
