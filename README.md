@@ -20,7 +20,7 @@
 
 # **Calibration.npz 파일 생성 방법**
 
-final_make_calibraton.py이 정상적으로 실행되기 위해선 아래와 같이 과정이 필요합니다.
+[final_make_calibraton.py]이 정상적으로 실행되기 위해선 아래와 같이 과정이 필요합니다.
 
 추가적인 정보는 아래 링크를 참조하시기 바랍니다.
 
