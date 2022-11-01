@@ -19,6 +19,8 @@
     - 편의점과 마트의 경우 높이문제보다는 가로 세로의 중요성이 더 크므로 상이할 것으로 예상
     
 
-# 📷 Screenshot
+# 📷 Screenshot(result) 
+- hexahedron
 ![image](https://drive.google.com/uc?export=view&id=16XEimDh3hfWV0f0Ds8dpFusU5i7LtNC8)
+- cylynder
 ![image](https://drive.google.com/uc?export=view&id=1bW5UwwkYER18Mismg6gOChcaaZMl_qUW)
