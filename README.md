@@ -24,3 +24,15 @@
 ![image](https://drive.google.com/uc?export=view&id=16XEimDh3hfWV0f0Ds8dpFusU5i7LtNC8)
 - cylinder
 ![image](https://drive.google.com/uc?export=view&id=1bW5UwwkYER18Mismg6gOChcaaZMl_qUW)
+
+## ****References****
+
+- **Rembg**:[https://github.com/danielgatis/rembg](https://github.com/danielgatis/rembg)
+- **Opencv_Calibration**:[https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html](https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html)
+- **ORB**:[https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html](https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html)
+
+### **License**
+
+Copyright (c) 2022 Yeardream-Power-4-team
+
+Please contact me gomugomutree@gmail.com if you need help
